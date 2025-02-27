@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    thickness = int(input())  # Nhập độ dày (phải là số lẻ)
+    thickness = int(input())
     c = 'H'
 
     for i in range(thickness):
@@ -8,7 +8,7 @@ if __name__ == '__main__':
     for i in range(thickness + 1):
         print((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
 
-    for i in range((thickness + 1) // 2):  # Dùng // thay vì / để tránh lỗi float
+    for i in range((thickness + 1) // 2):
         print((c * thickness * 5).center(thickness * 6))
 
     for i in range(thickness + 1):
